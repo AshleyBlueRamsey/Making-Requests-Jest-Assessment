@@ -4,7 +4,7 @@ const BASE_URL = "http://localhost:5000";
 function index() {
   const url = `${BASE_URL}/constellations`;
     axios.get(url)
-  .then((respobse) => {
+  .then((response) => {
     console.log(response.data);
   });
 }
