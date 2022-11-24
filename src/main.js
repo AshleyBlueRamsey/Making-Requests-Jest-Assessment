@@ -17,14 +17,11 @@ function create(body) {
   });
 }
 
-
-
-
-function create(body) {
-  const url = `${BASE_URL}/constellations`;
-  axios.post(url, body)
+function show(id) {
+  const url = `${BASE_URL}/constellations/${id}`;
+  axios.get(url)
   .then((response) => {
-    console.log(response.data);
+    console.log(response.data)
   });
 }
 
@@ -43,7 +40,6 @@ function destory(id) {
     console.log(response.data);
   });
 }
-
 
 module.exports = {
   index,
